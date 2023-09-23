@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta name="description" content="EduBooks Store Website's homepage">
+        <meta name="keyword" content="edubooks">
+        <meta name="author" content="Bipin Basnet">
+        <title>EduBooks</title>
+        <link rel="stylesheet" href="../style/index.css">
+        <!--Internal Css-->
+        <style>
+            .btn
+            {
+                background: rgb(25, 177, 248);
+                padding: 3px 40px 3px 40px;
+                font-weight: bold;
+                border: 2px solid rgb(25, 177, 248);
+                border-radius: 10px;
+                font-size: 20px;
+                cursor: pointer;
+            }
+            label{
+                font-size: 18px;
+                
+            }
+            .inpt
+            {
+                background-color: rgb(255, 255, 255);
+                border: 1px solid grey; 
+                border-radius:10px;
+                height: 30px; 
+                width: 200px; 
+            }
+            .inpt1
+            {
+                background-color: rgb(255, 255, 255);
+                border: 1px solid red; 
+                border-radius:10px;
+                height: 30px; 
+                width: 200px; 
+            }
+            
+        </style>
+    </head>
+    <body  >
+        <!--Navigation Bar-->
+        <header class="navbar">
+                <p class="logo"><a href="../index.html">Edu<span>Books</a></span></p>
+                <nav class="navigation">
+                    <ul class="nav" >
+                        <li ><a href="../index.html">Home</a></li>
+                        <li><a href="blog.html">Blog</a></li>
+                        <li><a href="productbiography.html">Product</a></li>
+                        <li class="active"><a href="contactus.html">ContactUs</a></li>
+                    </ul>
+                </nav>    
+        </header>
+        <div class="contactbody">
+            <!--Contact Heading-->
+            <div class="contact-us" style="  width: 100%; height: 150px;">
+                <h1 class="contact" style="padding-left: 43%; padding-top: 50px;">Contact<span style="color: rgb(0, 110, 255);"> Us </span></h1>
+            </div>
+            <div class="lowerbody" style="display: flex;">
+                <!--Division For the Information about EduBooks-->
+                <div class="lower-left" style="flex:50; width: 400px; height: auto;  padding:10px 0px 0px 80px;">
+                    <table >
+                        <tr>
+                            <td>
+                                <img src="../images/location.png" alt="Location Icon">
+                            </td>
+                            <td>
+                                <label class="details"> Bhotahiti, Kathmandu</label>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <img src="../images/facebook.png" alt="Facebook Icon">
+                            </td>
+                            <td>
+                                <label class="details"><a href="https://www.facebook.com/" target="_blank">EduBooks</a></label>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <img src="../images/mail.png" alt="Mail Icon">
+                            </td>
+                            <td>
+                                <label class="details"><a href="mailto:edubooks@gmail.com" target="_blank">EduBooks@gmail.com</a></label>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <img src="../images/insta.png" alt="insta Icon">
+                            </td>
+                            <td>
+                                <label class="details"><a href="https://www.instagram.com/" target="_blank">EduBooks</a></label>
+                            </td>
+                        </tr>
+                    </table>
+                    <br>
+                    <div style="margin-left: 80px;">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3532.3320782377186!2d85.31119151487124!3d27.707031432792093!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39eb18ffd996ebf1%3A0x9004b7fb43edbddf!2sBhotahiti%2C%20Kathmandu%2044600!5e0!3m2!1sen!2snp!4v1648312940465!5m2!1sen!2snp" width="300" height="300" style="border:0;"></iframe>
+                    </div>
+                </div>
+                <!--Contact Form-->
+                <div class="lower-right" style="flex:50; padding-right: 20px; border: 1px solid black; border-radius: 20px; width: 100px; height: auto; margin-right: 300px; box-shadow: 5px 5px 5px 5px grey; ">
+                    <form name="feedbackform" onsubmit="form()">
+                        <table >
+                            <tr >
+                                <td>
+                                    <label>Name:</label>
+                                    
+                                </td>
+                                <td id="name">
+                                    <input  class="inpt"   type="text" name="Name" placeholder=" Name   Surname">
+                                </td>
+                            </tr> 
+                            <tr>
+                                <td>
+                                    <label>Gender</label>
+                                </td>
+                                <td>
+                                    <input style="height:16px; width:16px; margin-left: 10px;" type="radio" name="gender" value="male" checked> <label>Male</label>
+                                    <input style="height:16px; width:16px; margin-left: 10px;" type="radio" name="gender" value="female"> <label>Female</label>
+                                </td>
+                            </tr>  
+                            <tr>
+                                <td>
+                                    <label>Number:</label>
+                                </td>
+                                <td>
+                                    <input id="num" class="inpt"  type="number" name="number" placeholder=" (000) 000-0000">
+                                </td>
+                            </tr> 
+                            <tr>
+                                <td>
+                                    <label>Email:</label>
+                                </td>
+                                <td>
+                                    <input id="email" class="inpt"  type="email" name="email" placeholder=" xyz@gmail.com">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <label>Feedback</label>
+                                </td>
+                                <td>
+                                    <textarea id="feedback"  style="border: 1px solid grey; border-radius: 10px; " name="feedback" rows="13" cols="40" placeholder=" Your Feedback Here.."></textarea>
+                                </td>
+                            </tr>
+                        
+                            
+                        </table>
+                        
+                        <input class="btn" style="margin-left: 210px;" type="submit" onclick="redborder()" value="Submit">
+                        <br>
+                        <br>
+                        <label  style="margin-left:175px;">Submit Your Form Here!</label>
+
+                    </form>
+                </div>
+            </div>
+        </div>
+        <br>
+        <!--Footer For the copyright Reserve-->
+        <footer>
+            
+            &copy;2022 EduBooks. All Rights Reserved
+        
+        </footer>
+        <script>
+            //JavaScript for the form Validation
+            function form()
+            {
+                var a = document.forms['feedbackform']['Name'].value;
+                var b = document.forms['feedbackform']['number'].value;
+                var c = document.forms['feedbackform']['email'].value;
+                var d = document.forms['feedbackform']['feedback'].value;
+                
+
+                if(a=="" || b=="" || c=="" || d =="" )
+                {
+                    alert("Empty Field Found! Please Enter The all values");
+                }
+                else
+                {
+                    alert("Thanks For Your FeedBack!");
+                }
+                
+                
+            }
+        </script>
+    </body>
+</html>    

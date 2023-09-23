@@ -1,0 +1,184 @@
+ 
+/* external Css for the navigation of the webpage */
+
+*
+{
+    margin: 0px;
+    padding: 0px;
+    text-decoration: none;
+    color: black;
+    font-family:'poppins';
+
+}
+body
+{
+    background-color: #e4e4e4;
+    
+}
+.logo
+{
+    font-weight: bold;
+    font-size: 25px;
+    cursor: pointer;
+}
+span
+{
+    color: #2433fc;
+}
+.navbar
+{
+    padding: 20px 0px 20px 60px;
+    display: flex;
+    justify-content: space-between;
+    line-height: 20px;
+    background-color: #62c8f4;
+    
+}
+ul li
+{
+    font-size: 17px;
+    display: inline;
+    margin-right:50px;
+    padding: 10px;
+}
+.nav li a:hover
+{
+    color: white;
+    font-weight: bold;
+    transition: 0.2s ease;
+}
+.active a
+{
+    color: white;
+    font-weight: bold;
+
+}
+/* css For footer */
+footer
+{
+    background-color: rgb(88, 88, 88);
+    color: white;
+    width: 100%;
+    text-align: center;
+    bottom: 0px;
+}
+
+/* css for the products page and its navigation bar */
+table
+{
+    margin: 20px 0px 0px 15%;
+    width: 30%; 
+    border-spacing: 15px;
+}
+.bookscontent th
+{
+    padding: 5px;
+    font-weight: normal;
+    font-size: 17px;
+    border-radius: 20px;
+    
+}
+.bookscontent th:hover
+{
+    background-color: #62c8f4;
+    font-weight: bold;
+    transition: 0.3s;
+}
+.activebook 
+{
+    background-color: #62c8f4;
+    font-weight: bold;
+}
+
+.products
+{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 50px;
+}
+
+/* For products that are to be selled */
+.book-image
+{
+    overflow: hidden;
+    padding-left: 25px;
+    width: 250px;
+    height: 350px;
+}
+.price
+{
+    font-size: 20px;
+    color: grey;
+    margin-left: 90px;
+}
+
+/* Adding into the cart */
+.control
+{
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+.sub, .add
+{
+    font-size: 25px;
+    padding: 3px;
+    border-radius: 45%;
+    cursor: pointer;
+    background: #62c8f4;
+    border: 2px solid black;
+}
+.total
+{
+    font-size: 20px;
+}
+.sub
+{
+    margin-left: 20px;
+}
+.add
+{
+    margin-right: 20px;
+}
+.sub:hover, .add:hover{
+    box-shadow: 2px 2px 2px 2px grey;
+    transition: 0.2s;
+}
+.cart
+{
+    margin: 5px 0px 0px 90px;
+    font-size: 17px;
+    padding: 5px;
+    border: 2px solid #62c8f4;
+    border-radius: 20px;
+    background:#62c8f4 ;
+}
+.cart:hover
+{
+    cursor: pointer;
+    background: none;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.buyproducts
+{
+ border: 1px solid black; 
+ width: 300px;
+  height: 500px;
+}
+.buyproducts:hover
+{
+    box-shadow: 5px 5px 5px 5px grey;
+    transition: 0.3s;
+    
+}
+
+.numbertext
+{
+    margin-left: 10px;
+    width: 40px;
+    font-size: 25px;
+    background: none;
+    border: none;
+}

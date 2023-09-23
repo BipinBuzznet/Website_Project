@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta name="description" content="EduBooks Store Website's homepage">
+        <meta name="keyword" content="edubooks">
+        <meta name="author" content="Bipin Basnet">
+        <title>EduBooks</title>
+        <link rel="stylesheet" href="style/index.css">
+        <style>
+            .upper-body
+            {
+                display: flex;
+                padding-top: 20px;
+            }
+            .left-body
+            {
+                margin: auto;
+                margin-left: 100px;
+                margin-bottom: 13%;
+            }
+            .btn
+            {
+                background: rgb(25, 177, 248);
+                padding: 3px;
+                font-weight: bold;
+                border: 2px solid rgb(25, 177, 248);
+                border-top-left-radius: 15px;
+                border-bottom-right-radius: 15px;
+                cursor: pointer;
+                
+            }
+            .btn:hover
+            {
+                background: none;
+                color: black;
+                transition: 0.3s ease;
+            }
+            .image 
+            {
+                width: 80%;
+                height:80%;
+                margin-left: 20px;
+                border-radius: 20px;
+                overflow: hidden;
+                box-shadow: 5px 5px 5px 5px grey;
+                
+            }
+            .lower-body
+            {
+                display: flex;
+            }
+            .books
+            {
+                width: 100px;
+            }
+            
+        </style>
+    </head>
+    <body >
+        <!--Navigation Bar-->
+        <header class="navbar">
+                <p class="logo"><a href="index.html">Edu<span>Books</a></span></p>
+                <nav class="navigation">
+                    <ul class="nav" >
+                        <li class="active"><a href="index.html">Home</a></li>
+                        <li><a href="pages/blog.html">Blog</a></li>
+                        <li><a href="pages/productbiography.html">Product</a></li>
+                        <li><a href="pages/contactus.html">ContactUs</a></li>
+                    </ul>
+                </nav>    
+        </header>
+        <!--Contents Of The Body-->
+        <div class="body" >
+            <div class="upper-body" >
+                <!--Division for the contents and the button-->
+                <div class="left-body" style="flex: 35%; " >
+                    <p class="sub-heading" style="color: grey; font-size: 25px;">Explore Your Favourite Books!</p>
+                    <p class="heading" style="font-size: 30px; ">Book Featured This</p>
+                    <p class="month" style="font-weight: bold; font-size: 30px;">Month</p>
+                    <button id="btn" class="btn" type="button" onclick="seemore()">See More</button>
+
+                </div>
+                <!--Images Of Slider-->
+                <div id="img" class="right-body" style="flex: 65%;" >
+                    <img  class="image" src="images/a.jpg" alt="Images of BookStore">
+                </div>
+            </div>
+            <!--Division for the Some sample products-->
+            <div class="lower-body" >
+                <div class="lower-left" style="flex:50%; padding-left: 100px;">
+                    <p>Get All Your Books For The Best Price Possible!</p>
+                    <div style="margin-left: 10px;" >
+                        <a href="pages/productbiography.html"> <img class="books"  src="images/b1.jpg" alt="Image of book"> </a>
+                        <a href="pages/productbiography.html"> <img class="books"  src="images/b2.jpg" alt="Image of book"> </a>
+                        <a href="pages/productbiography.html"> <img class="books"  src="images/b3.jpg" alt="Image of book"> </a>
+                        <p style="color: grey; margin-left: 15px; ">CLICK ON THE BOOKS TO PURCHASE!</p>
+                    </div>
+                </div>
+                <!--Division For the Quote-->
+                <div class="lower-right" style="flex:50%;">
+                    <p>
+                    Books are the quietest and most constant of friends,
+                    <br>
+                    they are the most accessible and wisest of counselors,
+                    <br>
+                    and the most patient of teacher.
+                    </p>
+                    <cite> - Charles W. Eliot</cite>
+                </div>
+            </div>
+        </div>
+        <!--Footer Contaning the copyright-->
+        <footer>
+            
+                &copy;2022 EduBooks. All Rights Reserved
+            
+        </footer>
+        <script text="text/javascript">
+            //JavaScript For the Image Slider to Function
+            var images = ['a.jpg', 'b.jpg', 'c.jpg', 'd.jpg'];
+            var x = 0;
+            var image = document.getElementById('img');
+            setInterval(slider, 2000)
+            function slider()
+            {
+                if(x < images.length)
+                {
+                    x = x + 1;
+                }
+                else
+                {
+                    x = 1;
+                }
+                image.innerHTML = "<img class='image' src =images/" + images[x-1] + " alt='Image Of BookStore'>";
+            }
+            //Function to randomly select the page from the product page
+            
+            function seemore()
+            {
+                var page = ["pages/productbiography.html", "pages/productcomdey.html", "pages/productnovel.html", "pages/productthriller.html"];
+                var btn_seemore = document.getElementById('btn');
+                var random_btn = Math.trunc(Math.random()*4);
+                window.open(page[random_btn],"_self");
+                
+                
+            }
+            
+            
+            
+        </script>
+    </body>
+</html>

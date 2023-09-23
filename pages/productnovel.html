@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta name="description" content="EduBooks Store Website's homepage">
+        <meta name="keyword" content="edubooks">
+        <meta name="author" content="Bipin Basnet">
+
+        <title>Edubooks</title>
+        <link rel="stylesheet" href="../style/index.css">
+        
+    </head>
+    <body>
+        <!--Navigation bar-->
+        <header class="navbar">
+                <p class="logo"><a href="../index.html">Edu<span>Books</a></span></p>
+                <nav class="navigation">
+                    <ul class="nav" >
+                        <li ><a href="../index.html">Home</a></li>
+                        <li><a href="blog.html">Blog</a></li>
+                        <li class="active"><a href="product.html">Product</a></li>
+                        <li><a href="contactus.html">ContactUs</a></li>
+                    </ul>
+                </nav>    
+        </header>
+        <!--Navigation Bar for the book types-->
+        <div class="body">
+            <div class="book-type" >
+                <table>
+                    <tr class="bookscontent">
+                        <th ><a  href="productbiography.html">Biography </a></th>
+                        <th><a href="productcomdey.html">Comedy</a> </th>
+                        <th><a href="productthriller.html">Thriller</a> </th>
+                        <th class="activebook"><a style="font-weight: bold;" href="productnovel.html">Novels</a></th>
+                    </tr>
+                </table>
+
+            </div>
+
+            <!--Division created for the products-->        
+            <div class="products">
+                <div class="buyproducts" >
+                    <div >
+                        <img class="book-image" src="../images/e1.jpg" alt="image of book">
+                    </div>
+                    <div >
+                        <p class="price">Price: 2000</p>
+                    </div>
+                    <div class="control">
+                        <button class="sub" type="button" onclick="decerement()">-</button>
+                        <p id="total1" class="total">0</p>
+                        <button class="add" type="button" onclick="increment()">+</button>
+                    </div>
+                    <div class="addcart">
+                        <button class="cart" type="submit" onclick="added()">Add To Cart</button>
+                    </div>
+                </div>
+
+
+
+                <div class="buyproducts" >
+
+                    <div >
+                        <img class="book-image" src="../images/e2.jpg" alt="image of book">
+                    </div>
+                    <div >
+                        <p class="price">Price: 800</p>
+                    </div>
+                    <div class="control">
+                        <button class="sub" type="button" onclick="decerement1()">-</button>
+                        <p id="total2" class="total">0</p>
+                        <button class="add" type="button" onclick="increment1()">+</button>
+                    </div>
+                    <div class="addcart">
+                        <button class="cart" type="submit" onclick="added()">Add To Cart</button>
+                    </div>
+                </div>
+
+
+                <div class="buyproducts" >
+                    <div >
+                        <img class="book-image" src="../images/e3.jpg" alt="image of book">
+                    </div>
+                    <div >
+                        <p class="price">Price: 700</p>
+                    </div>
+                    <div class="control">
+                        <button  class="sub" type="button" onclick="decerement2()">-</button>
+                        <p id="total3" class="total">0</p>
+                        <button class="add" type="button" onclick="increment2()">+</button>
+                    </div>
+                    <div class="addcart">
+                        <button class="cart" type="submit" onclick="added()">Add To Cart</button>
+                    </div>
+                </div>
+
+                <div class="buyproducts" >
+                    <div>
+                        <img  class="book-image" src="../images/e4.jpg" alt="image of book">
+                    </div>
+                    <div >
+                        <p class="price">Price: 1000</p>
+                    </div>
+                    <div class="control">
+                        <button class="sub" type="button" onclick="decerement3()">-</button>
+                        <p id="total4" class="total">0</p>
+                        <button class="add" type="button" onclick="increment3()">+</button>
+                    </div>
+                    <div class="addcart">
+                        <button class="cart" type="submit" onclick="added()">Add To Cart</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <br>
+        <!--Footer Contaning the copyright-->
+        <footer>
+            
+            &copy;2022 EduBooks. All Rights Reserved
+        
+        </footer>
+        <script src="../javascript/product.js"></script>
+        
+    </body>
+</html>
